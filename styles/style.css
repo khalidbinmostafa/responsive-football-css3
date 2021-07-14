@@ -6,7 +6,7 @@ body{
     background-color: #FFFFFF;
 }
 /* first section */
-main{  
+ /* .first-section{  
         display: flex;
         justify-content: center;
         background-color: #2D25A0;
@@ -30,7 +30,7 @@ font-weight: bold;
 font-size: 64px;
 line-height: 80px;
 /* or 125% */
-color:  #FFFFFF;
+/* color:  #FFFFFF;
 
 }
 .anchor{
@@ -51,8 +51,50 @@ color:  #FFFFFF;
     bottom: 169px;
     background-color: #E02C6D;
     transition: width 5s, height 5s, transform 5s;
+} */
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2D25A0;
+
+}
+.title{
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    /* or 125% */
+    color:  #FFFFFF;
+}
+.banner img{
+    width: 556.01px;
+    height: 438px;
+}
+.anchor{
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #E02C6D;
+    font-size: 18px!important;
+    padding: 0px 5px;
+    font-weight: 300;
+    margin-left: 20px;
+     transition: width 5s, height 5s, transform 5s; 
 }
 .anchor:hover{
+    width: 200px;
+     height: 100px;
+     transform: rotate(180deg) scale(2em);
+    }
+.decoration{
+     width: 88px;
+    height: 24px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+}
+/* .anchor:hover{
    width: 200px;
     height: 100px;
     transform: rotate(180deg) scale(2em);
@@ -74,12 +116,12 @@ color:  #FFFFFF;
     right: 140.99px;
     bottom: 86px;
     left: 743px;
-}
+} */
 /* second-section */
 .players-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 747px;
+    margin-top: 50px;
     margin-bottom: 27px;
   
    
@@ -126,7 +168,7 @@ color: #6C6C6C;
     margin-bottom: 27px;
 }
 /* last-section-footer */
-footer {
+/* footer {
     height: 213px;
     width: 483.87103271484375px;
     left: 475px;
@@ -168,4 +210,44 @@ letter-spacing: 0em;
 margin-left: 123.94px;
 margin-right: 123.94px;
 color: #000000;
+} */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 100px; */
+    margin-top: 80px;
+    align-items: center;
+}
+.logo img{
+    width: 480px;
+    height: 110px;
+    margin-top: 50px;
+}
+.flex .icon{
+margin: 20px 0px;
+padding: 15px;
+background-color: #eee;
+border-radius: 30px;
+}
+/* --------------Media Queries----------- */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+
+    .first-section {
+        display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      
+      width: 100%;
+      
+    }
+    .players-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+   .players img{
+       width: 100%;
+   }
+
 }
