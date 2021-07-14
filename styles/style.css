@@ -5,6 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
 }
+/* first section */
 main{  
         display: flex;
         justify-content: center;
@@ -49,9 +50,14 @@ color:  #FFFFFF;
     top: 538.88px;
     bottom: 169px;
     background-color: #E02C6D;
-    
+    transition: width 5s, height 5s, transform 5s;
 }
-#decoration{
+.anchor:hover{
+   width: 200px;
+    height: 100px;
+    transform: rotate(180deg) scale(2em);
+}
+.decoration{
     width: 88px;
     height: 24px;
     padding: 10px 24px;
@@ -69,6 +75,7 @@ color:  #FFFFFF;
     bottom: 86px;
     left: 743px;
 }
+/* second-section */
 .players-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -118,6 +125,7 @@ color: #6C6C6C;
     margin-right: 30px;
     margin-bottom: 27px;
 }
+/* last-section-footer */
 footer {
     height: 213px;
     width: 483.87103271484375px;
@@ -160,5 +168,4 @@ letter-spacing: 0em;
 margin-left: 123.94px;
 margin-right: 123.94px;
 color: #000000;
-;
 }
